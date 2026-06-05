@@ -1,11 +1,14 @@
-import './App.css'
+import { Routes, Route } from 'react-router-dom'
+import Home from "./pages/Home.tsx";
+import Generate from "./pages/Generate.tsx";
 
 function App() {
-  return (
-    <>
-      <h1 className='text-red-300 text-5xl font-bold'>Hellow</h1>
-    </>
-  )
+    return (
+        <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/generate" element={<Generate />} />
+        </Routes>
+    )
 }
 
 export default App

@@ -1,73 +1,75 @@
-# React + TypeScript + Vite
+# 🚀 ProposalAI - Intelligent Proposal Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📋 Overview
 
-Currently, two official plugins are available:
+ProposalAI is a full-stack application that generates professional business proposals using AI. Simply fill out a project information form, and the AI creates a comprehensive, customized proposal. Edit inline, save to library, export as text, and manage all your proposals in one place.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Live Demo:** [Coming Soon](#)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+### ✅ Phase 1 - Complete
+- 🎨 Modern SaaS UI with dark theme
+- 📝 8-field project information form
+- 🤖 AI-powered proposal generation (Groq API)
+- ✏️ Inline proposal editing
+- 💾 Save proposals to localStorage
+- 📂 Load and manage saved proposals
+- 📋 Copy to clipboard
+- 📄 Export as .txt file
+- ✅ Form validation with character counters
+- 🔔 Toast notifications
+- 📱 Fully responsive design
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 🔜 Coming Soon
+- 📄 PDF export
+- 🔐 User authentication
+- ☁️ Cloud database (PostgreSQL)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🛠️ Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Frontend
+| Technology | Purpose |
+|------------|---------|
+| React 18 | UI framework |
+| TypeScript | Type safety |
+| Vite | Build tool |
+| Tailwind CSS | Styling |
+| React Router DOM | Navigation |
+| Lucide React | Icons |
+| React Hot Toast | Notifications |
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Backend
+| Technology | Purpose |
+|------------|---------|
+| Node.js | Runtime |
+| Express | Server framework |
+| TypeScript | Type safety |
+| Groq SDK | AI integration |
+| CORS | Cross-origin requests |
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### AI Model
+- **Provider:** Groq
+- **Model:** Llama 3 70B
+- **Speed:** ~2 seconds per proposal
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- Yarn package manager
+- Groq API key (free at [console.groq.com](https://console.groq.com))
+
+### Installation
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/RebeccaMeegahapola/ProposalAI.git
+cd proposal-ai
